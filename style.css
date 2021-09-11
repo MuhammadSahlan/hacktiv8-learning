@@ -1,0 +1,234 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: #eaeaea;
+}
+
+nav {
+   top: 0;
+   right: 0;
+   left: 0;
+   height: 60px;
+   position: fixed;
+   padding: 10px 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-sizing: border-box;
+   background-color: white;
+   z-index: 1;
+}
+
+nav > .right > *,
+nav > .left  > * {
+   text-decoration: none;
+   color: orange;
+}
+
+header > div.overlay {
+   width: 100%;
+   height: 100vh;
+   background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80');
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   opacity: .5;
+}
+
+header > h1,
+header > p,
+header > button {
+   position: absolute;
+   margin: 20px;
+}
+
+header > h1 {
+   color: orange;
+   top: 150px;
+}
+
+header > p {
+   top: 190px;
+   color: #212121;
+   font-weight: 400;
+}
+
+header > button {
+   top: 240px;
+   border-radius: 5px;
+   outline: none;
+   color: #fff;
+   border: none;
+   background-color: orange;
+   padding: 10px 20px;
+   font-size: 18px;
+}
+
+div.about {
+   margin: 20px;
+}
+
+div.about > h1 {
+   color: orange;
+   text-align: center;
+   font-weight: 400;
+   margin-top: 50px
+}
+
+div.about > div.description {
+   width: 100%;
+   display: flex;
+   margin-top: 50px;
+}
+
+div.about > div.description > div:first-child {
+   width: 40%;
+}
+
+div.about > div.description > div:last-child {
+   width: 60%;
+   margin-top: 20px;
+}
+
+div.about > div.description > div:first-child > img {
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+}
+
+div.about > div.description > div:last-child > h2 {
+   color: orange;
+}
+
+div.about > div.description > div:last-child > p {
+   margin-top: 20px;
+   color: #212121;
+}
+
+div.portfolio > h1 {
+   color: orange;
+   text-align: center;
+   font-weight: 400;
+   margin: 50px 0;
+}
+
+div.portfolio > div {
+   margin: 20px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+   box-sizing: border-box;
+}
+   
+div.portfolio > div > img {
+   width: 320px;
+   height: 320px;
+}
+
+div.blog {
+   margin: 20px;
+}
+
+div.blog > h1 {
+   color: orange;
+   text-align: center;
+   font-weight: 400;
+   margin: 50px 0;
+}
+
+div.card-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 10px;
+}
+
+div.card-container > div.card {
+   background-color: white;
+   border-radius: 5px;
+}
+
+div.card-container > div.card > .poster > img {
+   width: 100%;
+}
+
+div.card-container > div.card > .description {
+   padding: 10px 20px;
+}
+
+div.card-container > div.card > .description > h2 {
+   font-weight: 400;
+   color: orange;
+   margin-bottom: 10px;
+}
+
+
+div.card-container > div.card > .description > p {
+   color: #212121;
+   font-size: 14px;
+   margin-bottom: 10px;
+}
+
+
+div.card-container > div.card > .description > a {
+   text-decoration: none;
+}
+
+div.team {
+   margin: 20px;
+}
+
+div.team > h1 {
+   color: orange;
+   text-align: center;
+   font-weight: 400;
+   margin: 50px 0;
+}
+
+div.team > .team-container {
+   display: flex;
+   justify-content: space-between;
+}
+
+div.team > .team-container > div > img {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+}
+
+div.team > .team-container > div > p {
+   text-align: center;
+}
+
+div.contact {
+   margin: 100px 20px;
+   display: grid;
+   grid-template-columns: .5fr 1fr;
+}
+
+div.contact > div > h1 {
+   color: orange;
+   font-weight: 400;
+   margin-top: 80px;
+}
+
+div.contact > div > input,
+div.contact > div > textarea {
+   width: 100%;
+   padding: 10px;
+   box-sizing: border-box;
+   margin-bottom: 20px;
+}
+
+div.contact > div > button {
+   width: 100%;
+   box-sizing: border-box;
+   padding: 10px;
+   background-color: orange;
+   color: #fff;
+   border: none;
+}
